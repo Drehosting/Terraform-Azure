@@ -320,7 +320,6 @@ resource "azurerm_key_vault" "kv1" {
   tenant_id                   = data.azurerm_client_config.current.tenant_id
   soft_delete_retention_days  = 7
   purge_protection_enabled    = false
-
   sku_name = "standard"
 
   access_policy {
